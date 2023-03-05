@@ -20,7 +20,24 @@
   width: 100%;
   text-align: center;
 }
-
+.inputBox {
+  display: block;
+  margin: 27px;
+  border: 1px solid black;
+  width: 300px;
+  padding: 7px;
+}
+.register {
+  margin-left: 30%;
+}
+.appButton {
+  margin: 12px 27px;
+  padding: 7px;
+  width: 315px;
+  color: white;
+  background: blue;
+  border: 2px solid black;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
