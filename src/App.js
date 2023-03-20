@@ -5,6 +5,9 @@ import SignUp from './components/SignUp'
 import PrivateComponent  from './components/PrivateComponents';
 import Login from './components/Login'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import AddProduct from './components/AddProduct';
+import ProductList from './components/ProductList';
+import UpdateComponent from './components/UpdateComponent';
 function App() {
   return (
     <div className="App">
@@ -12,9 +15,9 @@ function App() {
       <Nav/>
       <Routes>
         <Route element={<PrivateComponent/>}>
-        <Route path="/" element={<h1> Product Listing Components</h1>}/>
-        <Route path="/add" element={<h1> Add Product Component</h1>}/>
-        <Route path="/update" element={<h1> Update Product</h1>}/>
+        <Route path="/" element={<ProductList/>}/> 
+        <Route path="/add" element={<AddProduct/>}/>
+        <Route path="/update/:id" element={<UpdateComponent/>}/>
         <Route path="/logout" element={<h1> Logout Component</h1>}/>
         <Route path="/profile" element={<h1> Profile Component</h1>}/>
         </Route>    {/*it is a closing tag for route private component, we want to make all the route private which comes under this route */}
